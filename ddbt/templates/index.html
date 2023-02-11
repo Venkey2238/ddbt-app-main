@@ -1,0 +1,248 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cryptocurrency - Landing Page Template</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Cryptocurrency Landing Page Template">
+	<meta name="keywords" content="cryptocurrency, unica, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/css/themify-icons.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/css/animate.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/css/owl.carousel.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/css/style.css"/>
+	 
+
+	<style>
+		#logo {
+			width: 200px;
+			height: 200px;
+			background: url(/static/img/logo.png) no-repeat;
+			background-size: contain;
+			float: left;    
+ 			margin: 0 15px 0 0;
+		}
+	</style>
+
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section -->
+	<header class="header-section clearfix">
+		<div class="container-fluid">
+			<a href="{% url 'index' %}" class="site-logo">
+				<div id="logo" >
+					<img src="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/img/logo.png" />
+				</div>
+			</a>
+			<div class="responsive-bar"><i class="fa fa-bars"></i></div>
+			<a href="" class="user"><i class="fa fa-user"></i></a>
+			<a href="{% url 'signup' %}" class="site-btn">Sign Up Free</a>
+			<nav class="main-menu">
+				<ul class="menu-list">
+					
+
+					<li><a href="{% url 'AddPeer' %}">Add Peers</a></li>
+					<li><a href="{% url 'AddToBlock' %}">Add Peers to Blocks</a></li>
+					<li><a href="{% url 'Transactions' %}">Transactions</a></li>
+					<li><a href="{% url 'ViewChain' %}">View Chain</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Hero section -->
+	<section class="hero-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 hero-text">
+					<h2>Invest in <span>Stable Coins</span> <br>StableCoin Transaction</h2>
+					<h4>Digital Currency is the future</h4>
+					<form class="hero-subscribe-from">
+						<input type="text" placeholder="Enter your email">
+						<input type="button" onclick="location.href='{% url 'AddPeer' %}';" value="Get Started" />
+
+				</div>
+				<div class="col-md-6">
+					<img src="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/img/ert2.png" class="laptop-image" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+
+	<!-- About section -->
+	<section class="about-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 offset-lg-6 about-text">
+					<h2>What is Stablecoin</h2>
+					<h5>Stablecoins are cryptocurrencies whose value is pegged, or tied, to that of another currency, commodity, or financial instrument.</h5>
+					<p>Stablecoins aim to provide an alternative to the high volatility of the most popular cryptocurrencies, including Bitcoin (BTC), which has made crypto investments less suitable for common transactions.</p>
+					<a href="" class="site-btn sb-gradients sbg-line mt-5">Get Started</a>
+				</div>
+			</div>
+			<div class="about-img">
+				<img src="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/img/ert1.png" alt="">
+			</div>
+		</div>
+	</section>
+	<!-- About section end -->
+
+
+
+	<!-- Process section -->
+	<section class="process-section spad">
+		<div class="container">
+			<div class="section-title text-center">
+				<h2>Get Started With Our Website</h2>
+				<p>Start learning about Stablecoin with interactive tutorials. It’s fun, easy, and takes only a few minutes! </p>
+			</div>
+			<div class="row">
+				<div class="col-md-4 process">
+					<div class="process-step">
+						<figure class="process-icon">
+							<img src="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/img/process-icons/1.png" alt="#">
+						</figure>
+						<h4>Enter your wallet id</h4>
+						<p>After you enter the stable coin trading you will get a wallet you can enter your wallet id  </p>
+					</div>
+				</div>
+				<div class="col-md-4 process">
+					<div class="process-step">
+						<figure class="process-icon">
+							<img src="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/img/process-icons/2.png" alt="#">
+						</figure>
+						<h4>AddPeer and AddToBlock <Section></Section></h4>
+						<p>Here you can add the user/peer to the block of the blockchain </p>
+					</div>
+				</div>
+				<div class="col-md-4 process">
+					<div class="process-step">
+						<figure class="process-icon">
+							<img src="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/img/process-icons/3.png" alt="#">
+						</figure>
+						<h4>Do the transaction</h4>
+						<p>After the block is added then you can do the transaction from one peer to another peer.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Process section end -->
+
+
+	<!-- Fact section -->
+	<section class="fact-section gradient-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="fact">
+						<h2>100+</h2>
+						<p>Supporting <br> Companies</p>
+						<i class="ti-basketball"></i>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="fact">
+						<h2>3K</h2>
+						<p>Transactions  <br> per hour</p>
+						<i class="ti-panel"></i>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="fact">
+						<h2>20</h2>
+						<p>Largest <br> Transactions</p>
+						<i class="ti-stats-up"></i>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<div class="fact">
+						<h2>30+</h2>
+						<p>Years <br> of evolution</p>
+						<i class="ti-user"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Fact section end -->
+
+
+	
+
+
+	
+
+	
+
+
+
+	
+
+
+	<!-- Footer section -->
+	<footer class="footer-section">
+		<div class="container">
+			<div class="row spad">
+				<div class="col-md-6 col-lg-3 footer-widget">
+					<a href="{% url 'index' %}">
+						<img src="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/img/logo.png" class="mb-4" alt=""> 
+					</a>
+					
+					<p>We provide you with a decentralized platform for your online Stablecoin transactions with the help of blockchain technology.</p>
+					
+				</div>
+				<div class="col-md-6 col-lg-2 offset-lg-1 footer-widget">
+					<h5 class="widget-title">Resources</h5>
+					<ul>
+						<li><a href="https://www.binance.com/en/blog/fiat/what-is-a-stablecoin-heres-where-and-how-to-buy-them-421499824684903322">How to Buy Coin</a></li>
+						<li><a href="https://corporatefinanceinstitute.com/resources/cryptocurrency/stablecoin/">Coin Overview</a></li>
+						<li><a href="https://www.imf.org/en/Blogs/Articles/2019/09/19/blog-digital-currencies-the-rise-of-stablecoins">Blog News</a></li>
+						<li><a href="https://www.thewealthmosaic.com/vendors/bitcoin-reserve/buy-sell-stablecoins/">How to Sell Coin</a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-6 col-lg-3 footer-widget pl-lg-5 pl-3">
+					<h5 class="widget-title">Follow The Stablecoin Updates</h5>
+					<div class="social">
+						<a href="" class="facebook"><i class="fa fa-facebook"></i></a>
+						<a href="" class="google"><i class="fa fa-google-plus"></i></a>
+						<a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+					</div>
+				</div>
+			</div>
+			
+			</div>
+		</div>
+	</footer>
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/js/jquery-3.2.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/js/owl.carousel.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/Venkey2238/ddbt/static/js/main.js"></script>
+</body>
+</html>
