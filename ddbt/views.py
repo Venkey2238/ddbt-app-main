@@ -179,9 +179,9 @@ def index(request):
 def AddPeer(request):
     if request.method == 'GET':
         blockchain = Blockchain()
-        #with open('BC_DB.txt', 'wb') as outputs:
-        #    pickle.dump(blockchain, outputs, pickle.HIGHEST_PROTOCOL)
-        #outputs.close()
+        with open('BC_DB.txt', 'wb') as outputs:
+            pickle.dump(blockchain, outputs, pickle.HIGHEST_PROTOCOL)
+        outputs.close()
         with open('BC_DB.txt', 'rb') as input:
             blockchain = pickle.load(input)
         input.close()    
